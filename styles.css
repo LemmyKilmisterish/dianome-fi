@@ -280,9 +280,9 @@ h3 {
   padding: 0;
   overflow: hidden;
   background:
-    linear-gradient(145deg, rgba(23, 33, 31, 0.98), rgba(8, 64, 62, 0.96)),
-    var(--ink);
-  box-shadow: 0 28px 80px rgba(13, 51, 47, 0.24);
+    linear-gradient(145deg, rgba(255, 255, 255, 0.92), rgba(237, 246, 243, 0.86)),
+    var(--surface);
+  box-shadow: 0 28px 80px rgba(13, 51, 47, 0.16);
 }
 
 .analysis-visual {
@@ -291,15 +291,15 @@ h3 {
 }
 
 .analysis-field {
-  fill: url("#panel-glow");
-  stroke: rgba(234, 251, 248, 0.18);
+  fill: rgba(255, 255, 255, 0.58);
+  stroke: rgba(11, 127, 120, 0.18);
   stroke-width: 1;
 }
 
 .analysis-glow {
   fill: none;
-  stroke: rgba(127, 224, 214, 0.2);
-  stroke-width: 38;
+  stroke: rgba(11, 127, 120, 0.1);
+  stroke-width: 42;
   stroke-linecap: round;
 }
 
@@ -313,7 +313,7 @@ h3 {
 }
 
 .sequence-reads {
-  stroke: rgba(234, 251, 248, 0.42);
+  stroke: rgba(23, 33, 31, 0.28);
   stroke-width: 4;
 }
 
@@ -330,7 +330,7 @@ h3 {
 
 .helix path:nth-child(n + 3) {
   fill: none;
-  stroke: rgba(234, 251, 248, 0.34);
+  stroke: rgba(23, 33, 31, 0.26);
   stroke-width: 2;
   stroke-linecap: round;
 }
@@ -341,8 +341,8 @@ h3 {
 }
 
 .variant-points {
-  fill: #17211f;
-  stroke: #eafbfb;
+  fill: var(--surface);
+  stroke: var(--teal);
   stroke-width: 3;
 }
 
@@ -355,16 +355,16 @@ h3 {
 }
 
 .variant-grid {
-  stroke: rgba(234, 251, 248, 0.18);
+  stroke: rgba(23, 33, 31, 0.16);
   stroke-width: 1;
 }
 
 .variant-cells {
-  fill: rgba(127, 224, 214, 0.34);
+  fill: rgba(11, 127, 120, 0.2);
 }
 
 .variant-cells rect:nth-child(2n) {
-  fill: rgba(183, 216, 107, 0.34);
+  fill: rgba(133, 169, 54, 0.24);
 }
 
 .hero-panel p {
