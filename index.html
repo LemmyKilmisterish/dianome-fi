@@ -94,34 +94,75 @@
             <a class="button button-secondary" href="#focus">Explore focus areas</a>
           </div>
         </div>
-        <aside class="hero-panel scientific-panel" aria-label="Scientific data visual">
-          <svg class="rna-visual" viewBox="0 0 340 260" role="img" aria-labelledby="rna-title rna-desc">
-            <title id="rna-title">RNA-inspired analysis visual</title>
-            <desc id="rna-desc">A simple RNA-like strand flowing through genomic data points.</desc>
-            <path class="rna-backbone" d="M42 206c48-92 96-92 144 0s96 92 144 0" />
-            <path class="rna-backbone rna-backbone-alt" d="M42 54c48 92 96 92 144 0s96-92 144 0" />
-            <g class="rna-rungs">
-              <path d="M67 166h70" />
-              <path d="M91 109h103" />
-              <path d="M132 74h101" />
-              <path d="M158 190h93" />
-              <path d="M208 112h74" />
+        <aside class="hero-panel scientific-panel" aria-label="Genomic analysis visual">
+          <svg class="analysis-visual" viewBox="0 0 420 360" role="img" aria-labelledby="analysis-title analysis-desc">
+            <title id="analysis-title">Genomic analysis visual</title>
+            <desc id="analysis-desc">A stylized genomic analysis interface with sequence reads, a helix, signal traces, and variant points.</desc>
+            <defs>
+              <linearGradient id="signal-gradient" x1="42" x2="366" y1="92" y2="266" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#7FE0D6" />
+                <stop offset="0.48" stop-color="#B7D86B" />
+                <stop offset="1" stop-color="#E39A78" />
+              </linearGradient>
+              <linearGradient id="panel-glow" x1="72" x2="360" y1="42" y2="318" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#EAFBF8" stop-opacity="0.24" />
+                <stop offset="1" stop-color="#B7D86B" stop-opacity="0.08" />
+              </linearGradient>
+            </defs>
+            <rect class="analysis-field" x="18" y="18" width="384" height="324" rx="8" />
+            <path class="analysis-glow" d="M68 256c68-112 122-146 178-102s88 25 116-63" />
+            <g class="sequence-reads">
+              <path d="M46 62h84" />
+              <path d="M46 83h124" />
+              <path d="M46 104h96" />
+              <path d="M46 125h142" />
+              <path d="M46 146h72" />
+              <path d="M46 167h118" />
             </g>
-            <g class="rna-points">
-              <circle cx="42" cy="206" r="6" />
-              <circle cx="67" cy="166" r="7" />
-              <circle cx="91" cy="109" r="5" />
-              <circle cx="132" cy="74" r="8" />
-              <circle cx="158" cy="190" r="6" />
-              <circle cx="186" cy="206" r="8" />
-              <circle cx="208" cy="112" r="6" />
-              <circle cx="233" cy="74" r="7" />
-              <circle cx="251" cy="190" r="5" />
-              <circle cx="282" cy="112" r="8" />
-              <circle cx="330" cy="206" r="6" />
+            <g class="read-marks">
+              <rect x="72" y="57" width="14" height="10" rx="2" />
+              <rect x="118" y="78" width="18" height="10" rx="2" />
+              <rect x="92" y="120" width="24" height="10" rx="2" />
+              <rect x="138" y="141" width="14" height="10" rx="2" />
+              <rect x="72" y="162" width="20" height="10" rx="2" />
+            </g>
+            <g class="helix">
+              <path d="M172 58c78 34 82 90 8 124s-68 90 18 124" />
+              <path d="M264 58c-78 34-82 90-8 124s68 90-18 124" />
+              <path d="M190 84h56" />
+              <path d="M183 121h70" />
+              <path d="M186 158h66" />
+              <path d="M191 195h56" />
+              <path d="M184 232h70" />
+              <path d="M190 269h58" />
+            </g>
+            <path class="signal-line" d="M40 274c28-38 52-42 77-18 30 29 51 10 76-41 23-48 55-60 89-32 37 31 61 10 91-74" />
+            <g class="variant-points">
+              <circle cx="72" cy="235" r="6" />
+              <circle cx="130" cy="276" r="5" />
+              <circle cx="193" cy="215" r="7" />
+              <circle cx="256" cy="174" r="5" />
+              <circle cx="315" cy="196" r="6" />
+              <circle cx="373" cy="109" r="7" />
+            </g>
+            <g class="variant-grid">
+              <path d="M302 72h62" />
+              <path d="M302 94h62" />
+              <path d="M302 116h62" />
+              <path d="M302 138h62" />
+              <path d="M302 160h62" />
+              <path d="M302 72v88" />
+              <path d="M323 72v88" />
+              <path d="M344 72v88" />
+              <path d="M365 72v88" />
+            </g>
+            <g class="variant-cells">
+              <rect x="304" y="74" width="17" height="18" rx="2" />
+              <rect x="325" y="96" width="17" height="18" rx="2" />
+              <rect x="346" y="118" width="17" height="18" rx="2" />
+              <rect x="304" y="140" width="17" height="18" rx="2" />
             </g>
           </svg>
-          <p>From patient sample to sequenced data to treatment-oriented genomic insight.</p>
         </aside>
       </section>
 

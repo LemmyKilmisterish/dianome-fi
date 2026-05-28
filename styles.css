@@ -276,61 +276,95 @@ h3 {
 }
 
 .scientific-panel {
-  display: grid;
-  gap: 1.1rem;
   align-self: center;
-  padding: clamp(1rem, 2vw, 1.35rem);
+  padding: 0;
+  overflow: hidden;
   background:
-    linear-gradient(140deg, rgba(255, 255, 255, 0.86), rgba(237, 246, 243, 0.78)),
-    var(--surface);
+    linear-gradient(145deg, rgba(23, 33, 31, 0.98), rgba(8, 64, 62, 0.96)),
+    var(--ink);
+  box-shadow: 0 28px 80px rgba(13, 51, 47, 0.24);
 }
 
-.scientific-panel p {
-  max-width: 25rem;
-  margin: 0;
-  color: var(--muted);
-  font-size: 0.96rem;
-}
-
-.rna-visual {
+.analysis-visual {
   width: 100%;
-  aspect-ratio: 340 / 260;
-  overflow: visible;
+  aspect-ratio: 420 / 360;
 }
 
-.rna-backbone,
-.rna-rungs {
+.analysis-field {
+  fill: url("#panel-glow");
+  stroke: rgba(234, 251, 248, 0.18);
+  stroke-width: 1;
+}
+
+.analysis-glow {
+  fill: none;
+  stroke: rgba(127, 224, 214, 0.2);
+  stroke-width: 38;
+  stroke-linecap: round;
+}
+
+.sequence-reads,
+.helix,
+.signal-line,
+.variant-grid {
   fill: none;
   stroke-linecap: round;
   stroke-linejoin: round;
 }
 
-.rna-backbone {
-  stroke: rgba(11, 127, 120, 0.82);
-  stroke-width: 8;
+.sequence-reads {
+  stroke: rgba(234, 251, 248, 0.42);
+  stroke-width: 4;
 }
 
-.rna-backbone-alt {
-  stroke: rgba(133, 169, 54, 0.78);
+.read-marks {
+  fill: rgba(183, 216, 107, 0.9);
 }
 
-.rna-rungs {
-  stroke: rgba(23, 33, 31, 0.24);
+.helix path:nth-child(-n + 2) {
+  fill: none;
+  stroke: url("#signal-gradient");
+  stroke-width: 5;
+  stroke-linecap: round;
+}
+
+.helix path:nth-child(n + 3) {
+  fill: none;
+  stroke: rgba(234, 251, 248, 0.34);
+  stroke-width: 2;
+  stroke-linecap: round;
+}
+
+.signal-line {
+  stroke: url("#signal-gradient");
+  stroke-width: 6;
+}
+
+.variant-points {
+  fill: #17211f;
+  stroke: #eafbfb;
   stroke-width: 3;
 }
 
-.rna-points {
-  fill: var(--surface);
-  stroke: var(--coral);
-  stroke-width: 3;
+.variant-points circle:nth-child(2n) {
+  stroke: #b7d86b;
 }
 
-.rna-points circle:nth-child(3n + 1) {
-  stroke: var(--teal);
+.variant-points circle:nth-child(3n) {
+  stroke: #e39a78;
 }
 
-.rna-points circle:nth-child(3n + 2) {
-  stroke: var(--green);
+.variant-grid {
+  stroke: rgba(234, 251, 248, 0.18);
+  stroke-width: 1;
+}
+
+.variant-cells {
+  fill: rgba(127, 224, 214, 0.34);
+}
+
+.variant-cells rect:nth-child(2n) {
+  fill: rgba(183, 216, 107, 0.34);
 }
 
 .hero-panel p {
