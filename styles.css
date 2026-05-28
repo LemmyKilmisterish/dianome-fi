@@ -275,6 +275,64 @@ h3 {
   backdrop-filter: blur(16px);
 }
 
+.scientific-panel {
+  display: grid;
+  gap: 1.1rem;
+  align-self: center;
+  padding: clamp(1rem, 2vw, 1.35rem);
+  background:
+    linear-gradient(140deg, rgba(255, 255, 255, 0.86), rgba(237, 246, 243, 0.78)),
+    var(--surface);
+}
+
+.scientific-panel p {
+  max-width: 25rem;
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.96rem;
+}
+
+.rna-visual {
+  width: 100%;
+  aspect-ratio: 340 / 260;
+  overflow: visible;
+}
+
+.rna-backbone,
+.rna-rungs {
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.rna-backbone {
+  stroke: rgba(11, 127, 120, 0.82);
+  stroke-width: 8;
+}
+
+.rna-backbone-alt {
+  stroke: rgba(133, 169, 54, 0.78);
+}
+
+.rna-rungs {
+  stroke: rgba(23, 33, 31, 0.24);
+  stroke-width: 3;
+}
+
+.rna-points {
+  fill: var(--surface);
+  stroke: var(--coral);
+  stroke-width: 3;
+}
+
+.rna-points circle:nth-child(3n + 1) {
+  stroke: var(--teal);
+}
+
+.rna-points circle:nth-child(3n + 2) {
+  stroke: var(--green);
+}
+
 .hero-panel p {
   color: var(--muted);
   margin-bottom: 1rem;
@@ -468,7 +526,12 @@ h3 {
   background: var(--bg);
 }
 
-.site-footer p {
+.footer-details {
+  display: grid;
+  gap: 0.2rem;
+}
+
+.footer-details p {
   margin: 0;
   text-align: right;
   font-size: 0.92rem;

@@ -26,10 +26,12 @@
         "name": "Dianome Oy",
         "alternateName": "Suomen Genomilääketieteen laboratorio",
         "url": "https://dianome.fi/",
+        "taxID": "3625463-5",
         "email": "sammeli@dianome.fi",
         "telephone": "+358509667466",
         "address": {
           "@type": "PostalAddress",
+          "postalCode": "20520",
           "addressLocality": "Turku",
           "addressCountry": "FI"
         },
@@ -91,11 +93,34 @@
             <a class="button button-secondary" href="#focus">Explore focus areas</a>
           </div>
         </div>
-        <aside class="hero-panel" aria-label="Company profile">
-          <p class="panel-label">Registered focus</p>
-          <p>Scientific research and development in natural sciences and engineering.</p>
-          <p class="panel-label">Auxiliary name</p>
-          <p>Suomen Genomilääketieteen laboratorio</p>
+        <aside class="hero-panel scientific-panel" aria-label="Scientific data visual">
+          <svg class="rna-visual" viewBox="0 0 340 260" role="img" aria-labelledby="rna-title rna-desc">
+            <title id="rna-title">RNA-inspired analysis visual</title>
+            <desc id="rna-desc">A simple RNA-like strand flowing through genomic data points.</desc>
+            <path class="rna-backbone" d="M42 206c48-92 96-92 144 0s96 92 144 0" />
+            <path class="rna-backbone rna-backbone-alt" d="M42 54c48 92 96 92 144 0s96-92 144 0" />
+            <g class="rna-rungs">
+              <path d="M67 166h70" />
+              <path d="M91 109h103" />
+              <path d="M132 74h101" />
+              <path d="M158 190h93" />
+              <path d="M208 112h74" />
+            </g>
+            <g class="rna-points">
+              <circle cx="42" cy="206" r="6" />
+              <circle cx="67" cy="166" r="7" />
+              <circle cx="91" cy="109" r="5" />
+              <circle cx="132" cy="74" r="8" />
+              <circle cx="158" cy="190" r="6" />
+              <circle cx="186" cy="206" r="8" />
+              <circle cx="208" cy="112" r="6" />
+              <circle cx="233" cy="74" r="7" />
+              <circle cx="251" cy="190" r="5" />
+              <circle cx="282" cy="112" r="8" />
+              <circle cx="330" cy="206" r="6" />
+            </g>
+          </svg>
+          <p>From patient sample to sequenced data to treatment-oriented genomic insight.</p>
         </aside>
       </section>
 
@@ -217,7 +242,10 @@
         <img src="assets/dianome-mark.svg" alt="" width="34" height="34">
         <span>Dianome</span>
       </a>
-      <p>Dianome Oy · Turku, Finland · Suomen Genomilääketieteen laboratorio</p>
+      <div class="footer-details">
+        <p>Dianome Oy · Suomen Genomilääketieteen laboratorio</p>
+        <p>Business ID: 3625463-5 · Address: 20520 Turku, Finland</p>
+      </div>
     </footer>
   </body>
 </html>
